@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>LogIn</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="./css/main.css">
+    <title>BIDA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="cover" style="background-image: url(./assets/img/loginFont.jpg);">
-	<form action="home.html" method="" autocomplete="off" class="full-box logInForm">
-		<p class="text-center text-muted"><i class="zmdi zmdi-account-circle zmdi-hc-5x"></i></p>
-		<p class="text-center text-muted text-uppercase">Inicia sesión con tu cuenta</p>
-		<div class="form-group label-floating">
-		  <label class="control-label" for="UserEmail">E-mail</label>
-		  <input class="form-control" id="UserEmail" type="email">
-		  <p class="help-block">Escribe tú E-mail</p>
-		</div>
-		<div class="form-group label-floating">
-		  <label class="control-label" for="UserPass">Contraseña</label>
-		  <input class="form-control" id="UserPass" type="text">
-		  <p class="help-block">Escribe tú contraseña</p>
-		</div>
-		<div class="form-group text-center">
-			<input type="submit" value="Iniciar sesión" class="btn btn-raised btn-danger">
-		</div>
-	</form>
-	<!--====== Scripts -->
-	<script src="./js/jquery-3.1.1.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/material.min.js"></script>
-	<script src="./js/ripples.min.js"></script>
-	<script src="./js/sweetalert2.min.js"></script>
-	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="./js/main.js"></script>
-	<script>
-		$.material.init();
-	</script>
+<body class="bg-light">
+    <!-- Contenedor del video de fondo -->
+    <div id="video-container">
+        <!-- Video de fondo -->
+        <video autoplay muted loop id="video-background">
+            <source src="assets/img/VIDEO_FONDO_LOGIN.mp4" type="video/mp4">
+        </video>
+        <!-- Overlay negro -->
+        <div id="overlay"></div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="card shadow-lg rounded-lg card-login">
+                    <div class="card-header bg-primary text-white card-login-header">
+                        <!-- Logo -->
+                        <div class="card-login-logo">
+                            <img src="assets/img/LOGO - BIDA.png" alt="Logo de BIDA">
+                        </div>
+                        <!-- Texto del encabezado -->
+                        <h3 class="text-center">Bienvenidos a BIDA</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="home.html" method="POST" autocomplete="off">
+                            <div class="form-group">
+                                <label for="UserEmail">E-mail</label>
+                                <input class="form-control" id="12345gmail.com" type="email" required>
+                                <small class="form-text text-muted">Escribe tu correo ANEIAP</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="UserPass">Contraseña</label>
+                                <input class="form-control" id="UserPass" type="password" required>
+                                <small class="form-text text-muted">Escribe tu contraseña</small>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary btn-block btn-login">Iniciar sesión</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
