@@ -209,6 +209,24 @@ body, html{
 	border-left: 3px solid #FF5722;
 	color: #FF5722;
 }
+.sidebar-footer {
+    background-color: rgba(0, 0, 0, 0.568); /* Fondo negro semitransparente */
+    color: #fff; /* Texto blanco */
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.sidebar-footer a {
+    color: #18bd49; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+.sidebar-footer a:hover {
+    text-decoration: underline;
+}
 /*contentPage*/
 .dashboard-contentPage{
 	right: 0;
