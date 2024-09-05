@@ -1,0 +1,117 @@
+/* Estilos para el contenedor del video */
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+/* Estilos para el video de fondo */
+#video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra el área sin distorsión */
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos para el overlay negro */
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.453); /* Ajusta la opacidad según sea necesario */
+}
+
+/* Estilos adicionales */
+.btn-primary:hover {
+    background-color: #24a307 !important;
+}
+
+.btn-danger:hover {
+    background-color: #dc3545 !important;
+}
+
+.card-login {
+    background-color: #fffffffe;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10%; /* Ajusta este valor según la altura del cuadro */
+    position: relative;
+    z-index: 1; /* Asegura que el cuadro esté encima del video */
+}
+
+.card-login-header {
+    background-color: #ffffff; /* Cambia el color de fondo del encabezado */
+    color: white;
+}
+
+.card-login-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-login-logo img {
+    max-width: 200px; /* Ajusta el tamaño de la imagen del logo */
+    height: auto;
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+.btn-login {
+    background-color: #00ff1e;
+    border-color: #007bff;
+    border-radius: 8px;
+}
+
+.form-text {
+    color: #0d0d0d;
+}
+
+.form-link {
+    color: #007bff;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+}
+.card-login {
+    width: 100%;
+    max-width: 500px; /* Ajusta el valor según el tamaño deseado */
+    margin: 0 auto;
+}
+
+.card-login-header img {
+    max-width: 100%; /* Asegura que el logo se ajuste al ancho del contenedor */
+    height: auto;
+}
+.card-login {
+    padding: 15px; /* Aumenta el padding interno */
+}
+
+.card-body {
+    padding: 20px; /* Aumenta el padding interno del cuerpo del formulario */
+}
+.container {
+    justify-content: center;
+    padding-top: 4%;
+    height: auto;
+    width: 80%;
+}
+img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción original */
+}
+
