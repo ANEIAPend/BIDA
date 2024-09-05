@@ -92,23 +92,23 @@ body, html{
 .dashboard-sideBar{
 	left: 0;
 	z-index: 2;
-	background-image: url('../assets/img/sideBar-font.jpg');
+	background-image: url('../assets/img/ve.jpg');
 	border-right: 1px solid rgba(255, 255, 255, .4);
 	overflow: hidden;
 }
 .dashboard-sideBar-ct{
 	position: relative;
 	height: 100%;
-	background-color: rgba(0, 0, 0, .77);
+	background-color: rgba(71, 161, 83, 0.445);
 	padding: 0 10px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 .dashboard-sideBar-title,
 .dashboard-sideBar-title > i{
-	height: 50px;
-	line-height: 50px;
+	height: 70px;
+	line-height: 70px;
 	color: #fff;
-	font-size: 20px;
+	font-size: 28px;
 }
 .dashboard-sideBar-title{
 	position: relative;
@@ -121,15 +121,15 @@ body, html{
 	width: 40px;
 }
 .dashboard-sideBar-UserInfo{
-	border-top: 1px solid rgba(255, 255, 255, .3);
+	border-top: 1px solid rgba(218, 188, 188, 0.3);
 	border-bottom: 1px solid rgba(255, 255, 255, .3);
-	color: #fff;
-	font-size: 14px;
+	color: #ffffff;
+	font-size: 25px;
 	padding: 20px 0;
 }
 .dashboard-sideBar-UserInfo figure img{
-	width: 100px;
-	height: 100px;
+	width: 125px;
+	height: 125px;
 	border-radius: 100%;
 	display: block;
 	margin: 0 auto;
@@ -141,10 +141,11 @@ body, html{
 .dashboard-sideBar-UserInfo ul > li > a{
 	display: inline-block;
 	color: #fff;
+	
 }
 .dashboard-sideBar-UserInfo ul > li > a{
 	outline: none;
-	font-size: 20px;
+	font-size: 25px;
 	padding: 7px;
 	transition: all .3s ease-in-out;
 }
@@ -166,9 +167,10 @@ body, html{
 	border-radius: 4px;
 	transition: all .3s ease-in-out;
 	position: relative;
+	font-size: 20px;
 }
 .dashboard-sideBar-Menu > li > a > i.zmdi-caret-down{
-	line-height: 50px;
+	line-height: 55px;
 	transition: all .3s ease-in-out; 
 }
 .dashboard-sideBar-Menu > li > a{
@@ -217,14 +219,14 @@ body, html{
 .dashboard-Navbar > ul,
 .dashboard-Navbar > ul >li,
 .dashboard-Navbar > ul > li > a{
-	height: 50px;
+	height: 55px;
 	line-height: 50px;
 }
 .dashboard-Navbar > ul > li > a{
 	outline: none;
 }
 .dashboard-Navbar{
-	background-color: #000;
+	background-color: #1f4a99;
 	overflow: hidden;
 }
 .dashboard-Navbar > ul >li,
