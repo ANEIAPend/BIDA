@@ -150,6 +150,9 @@
 					  	<li class="active"><a href="#new" data-toggle="tab">Nuevo</a></li>
 					  	<li><a href="#list" data-toggle="tab">Lista</a></li>
 					</ul>
+					<div>
+						
+					</div>
 					<div id="myTabContent" class="tab-content">
 						<div class="tab-pane fade active in" id="new">
 							<div class="container-fluid">
@@ -157,37 +160,191 @@
 									<div class="col-xs-12 col-md-10 col-md-offset-1">
 									    <form action="">
 									    	<div class="form-group label-floating">
-											  <label class="control-label">Nombre</label>
-											  <input class="form-control" type="text">
+												<label class="control-label">Ingresa los nombres</label>
+												<input class="form-control" type="text" id="Nombres" placeholder="Ingresa los nombres" title="Escribe tus nombres completos">
 											</div>
 											<div class="form-group label-floating">
-											  <label class="control-label">Apellido</label>
-											  <input class="form-control" type="text">
+												<label class="control-label">Ingresa los apellidos</label>
+												<input class="form-control" type="text" id="Apellidos" placeholder="Ingresa los apellidos" title="Escribe tus apellidos completos">
 											</div>
 											<div class="form-group label-floating">
-												<label class="control-label">Capítulo</label>
-												<input class="form-control" type="text">
-											<div class="form-group label-floating">
-											  <label class="control-label">Direccion</label>
-											  <input class="form-control" type="text">
+												<label class="control-label">Ingresa el id del capítulo</label>
+												<input class="form-control" type="text" id="id_capitulo" placeholder="Ingresa el id del capítulo" title="Nombre del capítulo asignado">
 											</div>
 											<div class="form-group label-floating">
-											  <label class="control-label">Correo ANEIAP</label>
-											  <input class="form-control" type="text">
+												<label class="control-label">Ingresa el Área de trabajo</label>
+												<input class="form-control" type="text" id="Area" placeholder="Ingresa el Área de trabajo" title="Escribe el área donde trabajas">
 											</div>
 											<div class="form-group label-floating">
-											  <label class="control-label">Número de telefono</label>
-											  <input class="form-control" type="text">
+												<label class="control-label">Ingresa el correo ANEIAP</label>
+												<input class="form-control" type="text" id="correo_corporativo" placeholder="Ingresa el correo ANEIAP" title="Escribe tu correo electrónico">
 											</div>
-											<div class="form-group">
-										      <label class="control-label">Foto del Asociado</label>
-										      <div>
-										        <input type="text" readonly="" class="form-control" placeholder="Browse...">
-										        <input type="file" >
-										      </div>
-										    </div>
+											<div class="form-group label-floating">
+												<label class="control-label">Ingresa el Número de teléfono</label>
+												<input class="form-control" type="text" id="celular" placeholder="Ingresa el Número de teléfono" title="Escribe tu número de teléfono">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">NUIA</label>
+												<input class="form-control" type="text" id="NUIA" placeholder="Número Único de Identificación ANEIAP" title="Escribe tu número Único de Identificación ANEIAP">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">Estado</label>
+												<input class="form-control" type="text" id="estado" placeholder="Estado actual" title="Escribe el estado actual">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">Tipo de Membresía</label>
+												<select class="form-control" id="membresia" title="Selecciona el tipo de membresía">
+												  <option value="">Selecciona el tipo de membresía</option>
+												  <option value="Activo">Activo</option>
+												  <option value="Provisional">Provisional</option>
+												  <option value="Beneficiario">Beneficiario</option>
+												  <option value="Profesional">Profesional</option>
+												</select>
+											</div>											  
+											<div class="form-group label-floating">
+												<label class="control-label" for="antecedentes">Antecedentes</label>
+												<input type="text" class="form-control" id="antecedentes" placeholder="Antecedentes">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="carnet">Carnet</label>
+												<input type="text" class="form-control" id="carnet" placeholder="Carnet">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="categoria">Categoría</label>
+												<input type="text" class="form-control" id="categoria" placeholder="Categoría">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="contacto_emergencia">Contacto de Emergencia</label>
+												<input type="text" class="form-control" id="contacto_emergencia" placeholder="Contacto de Emergencia">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="correo_corporativo">Correo Corporativo</label>
+												<input type="email" class="form-control" id="correo_corporativo" placeholder="Correo Corporativo">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="direccion_casa">Dirección de Casa</label>
+												<input type="text" class="form-control" id="direccion_casa" placeholder="Dirección de Casa">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="discapacidad">Discapacidad</label>
+												<input type="text" class="form-control" id="discapacidad" placeholder="Discapacidad">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="eps">EPS</label>
+												<input type="text" class="form-control" id="eps" placeholder="EPS">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="enfermedad">Enfermedad</label>
+												<input type="text" class="form-control" id="enfermedad" placeholder="Enfermedad">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="fecha_nacimiento">Fecha de Nacimiento</label>
+												<input type="date" class="form-control" id="fecha_nacimiento">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="fecha_ingreso">Fecha de Ingreso</label>
+												<input type="date" class="form-control" id="fecha_ingreso">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="genero">Género</label>
+												<input type="text" class="form-control" id="genero" placeholder="Género">
+											</div>
+
+											<div class="form-group label-floating">
+												<label class="control-label" for="municipio_residencia">Municipio de Residencia</label>
+												<input type="text" class="form-control" id="municipio_residencia" placeholder="Municipio de Residencia">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="tipo_documento">Tipo de Documento</label>
+												<input type="text" class="form-control" id="tipo_documento" placeholder="Tipo de Documento">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label" for="numero_documento">Número de Documento</label>
+												<input type="text" class="form-control" id="numero_documento" placeholder="Número de Documento">
+											</div>
+											
+											<div class="form-group label-floating">
+												<label class="control-label" for="numero_telefono">Número de Teléfono</label>
+												<input type="text" class="form-control" id="numero_telefono" placeholder="Número de Teléfono">
+											</div>
+											
+											<div class="form-group label-floating">
+												<label class="control-label" for="parentesco">Parentesco</label>
+												<input type="text" class="form-control" id="parentesco" placeholder="Parentesco">
+											</div>
+											
+											<div class="form-group label-floating">
+												<label class="control-label" for="rh">RH</label>
+												<input type="text" class="form-control" id="rh" placeholder="RH">
+											</div>
+											
+											<div class="form-group label-floating">
+												<label class="control-label" for="semestre_aneiap">Semestre ANEIAP</label>
+												<input type="text" class="form-control" id="semestre_aneiap" placeholder="Semestre ANEIAP">
+											</div>
+											
+											<div class="form-group label-floating">
+												<label class="control-label" for="semestre_academico_universidad">Semestre Académico en la Universidad</label>
+												<input type="text" class="form-control" id="semestre_academico_universidad" placeholder="Semestre Académico en la Universidad">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">Semestre de Ingreso</label>
+												<select class="form-control" id="semestre_ingreso" title="Selecciona tu semestre de ingreso">
+												  <option value="">Selecciona el semestre</option>
+												  <option value="2015-1">2015-1</option>
+												  <option value="2015-2">2015-2</option>
+												  <option value="2016-1">2016-1</option>
+												  <option value="2016-2">2016-2</option>
+												  <option value="2017-1">2017-1</option>
+												  <option value="2017-2">2017-2</option>
+												  <option value="2018-1">2018-1</option>
+												  <option value="2018-2">2018-2</option>
+												  <option value="2019-1">2019-1</option>
+												  <option value="2019-2">2019-2</option>
+												  <option value="2020-1">2020-1</option>
+												  <option value="2020-2">2020-2</option>
+												  <option value="2021-1">2021-1</option>
+												  <option value="2021-2">2021-2</option>
+												  <option value="2022-1">2022-1</option>
+												  <option value="2022-2">2022-2</option>
+												  <option value="2023-1">2023-1</option>
+												  <option value="2023-2">2023-2</option>
+												  <option value="2024-1">2024-1</option>
+												  <option value="2024-2">2024-2</option>
+												</select>
+											</div>	
+											  <div class="form-group label-floating">
+												<label class="control-label" for="semestre_ingreso">Semestre de Ingreso</label>
+												<input type="text" class="form-control" id="semestre_ingreso" placeholder="Semestre de Ingreso">
+											  </div>
+											
+											  <div class="form-group label-floating">
+												<label class="control-label" for="telefono_contacto">Teléfono de Contacto</label>
+												<input type="text" class="form-control" id="telefono_contacto" placeholder="Teléfono de Contacto">
+											  </div>
+											
+											  <div class="form-group label-floating">
+												<label class="control-label" for="vacunas">Vacunas</label>
+												<input type="text" class="form-control" id="vacunas" placeholder="Vacunas">
+											  </div>
+											
+											  <div class="form-group label-floating">
+												<label class="control-label" for="estado">Estado</label>
+												<input type="text" class="form-control" id="estado" placeholder="Estado">
+											  </div>
+											  <div class="form-group label-floating">
+												<label class="control-label" for="membresia">Membresía</label>
+												<input type="text" class="form-control" id="membresia" placeholder="Membresía">
+											  </div>
+											  
+											  <div class="form-group label-floating">
+												<label class="control-label" for="semestre_actual">Semestre Actual</label>
+												<input type="text" class="form-control" id="semestre_actual" placeholder="Semestre Actual">
+											  </div>
+				
+
 										    <p class="text-center">
-										    	<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i>Guardar</button>
+										    	<button type="button" href="#!" id="save_button" class="btn btn-info btn-raised btn-sm">Guardar</button>
 										    </p>
 									    </form>
 									</div>
@@ -211,51 +368,8 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>1</td>
-											<td>Carlos</td>
-											<td>Alfaro</td>
-											<td>UNINORTE</td>
-											<td>Mercadeo</td>
-											<td>carlos.alfaro@aneiap.com</td>
-											<td>+50312345678</td>
-											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
-											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Alicia</td>
-											<td>Melendez</td>
-											<td>LIBREQUILLA</td>
-											<td>Academico</td>
-											<td>alicia.melendez@aneiap.com</td>
-											<td>+50312345678</td>
-											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
-											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Sarai</td>
-											<td>Lopez</td>
-											<td>LIBRECALI</td>
-											<td>Finanzas</td>
-											<td>sarai.lopez@aneiap.com</td>
-											<td>+50312345678</td>
-											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
-											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
-										</tr>
-										<tr>
-											<td>4</td>
-											<td>Alba</td>
-											<td>Bonilla</td>
-											<td>UTP</td>
-											<td>Comunicaciones</td>
-											<td>alba.bonilla@aneiap.com</td>
-											<td>+50312345678</td>
-											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
-											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
-										</tr>
-									</tbody>
+										
+									</tbody id="tbody1">
 								</table>
 								<ul class="pagination pagination-sm">
 								  	<li class="disabled"><a href="#!">«</a></li>
@@ -360,5 +474,159 @@
 	<script>
 		$.material.init();
 	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+		import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js";
+	
+		// Configuración de Firebase
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyDgLEBbn_PU7nrWsMFe5xtgOwiG3M77unk",
+			authDomain: "bida-bc35f.firebaseapp.com",
+			databaseURL: "https://bida-bc35f-default-rtdb.firebaseio.com",
+			projectId: "bida-bc35f",
+			storageBucket: "bida-bc35f.appspot.com",
+			messagingSenderId: "51120819237",
+			appId: "1:51120819237:web:2bb84a589ac3e1352403cc",
+			measurementId: "G-Q16S4BJHYP"
+		};
+	
+		// Inicializar Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+		const db = getDatabase();
+	
+		// Asegurarse de que el DOM esté completamente cargado
+		document.addEventListener('DOMContentLoaded', () => {
+			console.log('DOM completamente cargado');
+
+			let Nombres = document.getElementById('Nombres');
+			let Apellidos = document.getElementById('Apellidos');
+			let id_capitulo = document.getElementById('Nombre_Capítulo');
+			let Area = document.getElementById('Area');
+			let correo_corporativo = document.getElementById('Correo_Corporativo');
+			let celular = document.getElementById('Telefono Celular');
+			let NUIA = document.getElementById('NUIA');
+			let estado = document.getElementById('estado');
+			let fecha_nacimiento = document.getElementById('fecha_nacimiento');
+			let membresia = document.getElementById('membresia');
+			let semestre_actual = document.getElementById('semestre_actual');
+			let semestre_ingreso = document.getElementById('semestre_ingreso');
+			let tipo_membresia = document.getElementById('tipo_membresia');
+
+			let save_button = document.getElementById('save_button');
+	
+			// Verificar si los elementos están bien capturados
+			if (!save_button || !Nombres || !Apellidos || !id_capitulo || !Area || !correo_corporativo || !Telefono || !NUIA) {
+				console.error("Uno o más elementos del formulario no fueron encontrados. Verifica los IDs.");
+				return;
+			}
+	
+			// Función para agregar datos
+			function AddData(){
+				console.log('Botón presionado');
+				console.log('Datos capturados: ', {
+					nombres: Nombres.value,
+					apellidos: Apellidos.value,
+					id_capitulo: id_capitulo.value,
+					area: Area.value,
+					correo_corporativo: correo_corporativo.value,
+					celular: celular.value,
+					nuia:NUIA.value,
+					estado:estado.value,
+					fecha_nacimiento: fecha_nacimiento.value,
+					membresia: membresia.value,
+					semestre_actual: semestre_actual.value,
+					semestre_ingreso: semestre_ingreso.value,
+					tipo_membresia: tipo_membresia.value,
+				});
+	
+				set(ref(db, 'Asociado/' + NUIA.value), {
+					nombres: Nombres.value, 
+					apellidos: Apellidos.value,
+					id_capitulo: id_capitulo.value,
+					area: Area.value,
+					correoCorporativo: correo_corporativo.value,
+					telefono: Number(Telefono.value),
+					nuia: Number(NUIA.value),
+					estado:estado.value,
+					fecha_nacimiento: fecha_nacimiento.value,
+					membresia: membresia.value,
+					semestre_actual: Number(semestre_actual.value),
+					semestre_ingreso: Number(semestre_ingreso.value),
+					tipo_membresia: tipo_membresia.value,
+
+				}).then(() => {
+					alert("Datos agregados correctamente");
+				}).catch((error)=> {
+					alert("No se subieron los datos");
+					console.error("Error al subir los datos: ", error);
+				});
+			}
+	
+			// Añadir el listener al botón de guardar
+			save_button.addEventListener('click', AddData);
+		});
+
+		let lista_asociados = [];
+		let sn0 = 0;
+
+		SelectAllDataOnce = () => {
+			const dbRef = ref(db);  // Crea una referencia a la base de datos de Firebase
+			get(child(dbRef, 'Asociado/'))  // Obtén los datos del nodo 'ListofEmployees'
+				.then((snapshot) => {  // Cuando los datos son recuperados exitosamente
+					lista_asociados = [];  // Inicializa una lista vacía para almacenar los asociados
+					snapshot.forEach(asociado => {  // Itera sobre cada asociado en los datos
+						lista_asociados.push(asociado.val());  // Agrega el valor del asociado a la lista
+					});
+					AddAllRecords();  // Llama a la función para procesar los registros
+				});
+		};
+
+		const AddSingleRecord = (nuia, nombres, apellidos, area, correoCorporativo, telefono) => {
+            // Crear una nueva fila
+            let trow = document.createElement('tr');
+
+            // Crear las celdas de la tabla
+            let td1 = document.createElement('td');
+            let td2 = document.createElement('td');
+            let td3 = document.createElement('td');
+            let td4 = document.createElement('td');
+            let td5 = document.createElement('td');
+			let td6 = document.createElement('td');
+			let td7 = document.createElement('td');
+
+            // Asignar el contenido a cada celda
+            td1.innerHTML = ++sno;  // Incrementar el número de serie
+            td2.innerHTML = NUIA;
+            td3.innerHTML = Nombres;
+            td4.innerHTML = Apellidos;
+            td5.innerHTML = Area;
+			td6.innerHTML = Correo_Corporativo;
+			td7.innerHTML = Telefono;
+
+            // Añadir las celdas a la fila
+            trow.append(td1, td2, td3, td4, td5, td6, td7);
+			tbody.append(trow);
+
+            // Añadir la fila al cuerpo de la tabla
+            document.getElementById('recordBody').append(trow);
+        };
+
+		const AddAllRecords = () => {
+			sno = 0;
+			tbody.innerHTML = "";
+			lista_asociados.forEach(asociado => {
+				AddSingleRecord(asociado.nuia, asociado.Nombres, asociado.Apellidos, asociado.Area, asociado.Correo_Corporativo, asociado.Telefono);
+			})
+		}
+
+	</script>
+	
 </body>
 </html>
